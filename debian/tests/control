@@ -1,0 +1,1 @@
+Test-Command: python3 -c "import distlib; print(distlib.__version__)"

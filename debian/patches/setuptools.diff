@@ -1,0 +1,33 @@
+From 7dfb0b3c5a958ea15345a2fefbcbdab0ea6f1cff Mon Sep 17 00:00:00 2001
+From: Barry Warsaw <barry@debian.org>
+Date: Tue, 19 May 2015 11:18:34 +0200
+Subject: Use setuptools.setup() in order to allow the bdist_wheel command.
+
+Forwarded: not-needed
+
+Patch-Name: setuptools.diff
+---
+ setup.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 32d0811..6a9205c 100644
+--- a/setup.py
++++ b/setup.py
+@@ -5,6 +5,7 @@
+ # See LICENSE.txt and CONTRIBUTORS.txt.
+ #
+ 
++import setuptools
+ import distutils.core
+ from distutils.sysconfig import get_python_lib
+ from os.path import join, dirname, abspath
+@@ -31,7 +32,7 @@ class TestCommand(distutils.core.Command):
+     def finalize_options(self):
+         pass
+ 
+-distutils.core.setup(
++setuptools.setup(
+     name='distlib',
+     version=distlib.__version__,
+     author='Vinay Sajip',

@@ -1,0 +1,135 @@
+distlib (0.3.2+really+0.3.1-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Revert to 0.3.1 for Debian bullseye.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 01 Jul 2021 13:40:03 -0400
+
+distlib (0.3.2-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Mon, 21 Jun 2021 10:28:59 +0200
+
+distlib (0.3.1-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Bump debhelper and standards version.
+
+ -- Matthias Klose <doko@debian.org>  Fri, 17 Jul 2020 10:20:12 +0200
+
+distlib (0.3.0-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Sun, 03 Nov 2019 15:42:37 +0200
+
+distlib (0.2.9.post0-2) unstable; urgency=medium
+
+  * Stop building the Python 2 package. Closes: #936405.
+  * Drop Barry as uploader.
+  * Bump standards version.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 26 Oct 2019 16:08:11 +0200
+
+distlib (0.2.9.post0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Matthias Klose <doko@debian.org>  Fri, 28 Jun 2019 17:38:43 +0200
+
+distlib (0.2.8-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Matthias Klose <doko@debian.org>  Thu, 18 Oct 2018 12:07:46 +0200
+
+distlib (0.2.7-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Matthias Klose <doko@debian.org>  Thu, 26 Apr 2018 13:04:09 +0200
+
+distlib (0.2.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump standards version.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 01 Nov 2017 05:39:36 +0100
+
+distlib (0.2.5-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 16 May 2017 17:22:15 -0700
+
+distlib (0.2.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * d/control: Bump Standards-Version with no other changes needed.
+
+ -- Barry Warsaw <barry@debian.org>  Tue, 25 Oct 2016 17:28:45 -0400
+
+distlib (0.2.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * d/control:
+    - Remove python-distlib-whl binary package as it's no longer necessary.
+    - Remove python3-wheel from Build-Depends.
+  * d/rules:
+    - Add explicit PYBUILD_NAME variable.
+    - Remove override_dh_auto_install since we no longer need to build the
+      wheel version.
+  * d/README.source, d/*.install: Removed; unneeded.
+  * d/tests: Added some simple smoke tests.
+
+ -- Barry Warsaw <barry@debian.org>  Tue, 09 Feb 2016 16:56:53 -0500
+
+distlib (0.2.0-2) unstable; urgency=medium
+
+  * d/control:
+    - Add myself to Uploaders.
+    - Add Vcs-* headers for new git packaging repository.
+
+ -- Barry Warsaw <barry@debian.org>  Thu, 21 May 2015 10:01:48 -0400
+
+distlib (0.2.0-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Fix lintian warnings.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 19 May 2015 11:18:34 +0200
+
+distlib (0.1.9-1) unstable; urgency=medium
+
+  * New upstream version.
+
+  * Build a wheel package (Barry Warsaw). Closes: #748301.
+    - d/control:
+      - Added python-setuptools, python3-setuptools, python3-wheels to
+        Build-Depends.
+      - Added python-distlib-whl binary package.
+    - d/rules: Build the universal wheel.  (Closes: #748301)
+    - d/patches/setuptools.diff: Patch setup.py to use
+      setuptools.setup() so that the bdist_wheel command will work.
+    - d/python-distlib-whl.install: Added.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 21 May 2014 12:02:04 +0100
+
+distlib (0.1.8-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 29 Mar 2014 02:52:42 +0100
+
+distlib (0.1.7-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 18 Jan 2014 16:52:06 +0100
+
+distlib (0.1.6-1) unstable; urgency=low
+
+  * Initial release (Closes: #733735).
+
+ -- Matthias Klose <doko@debian.org>  Tue, 31 Dec 2013 15:32:00 +0000

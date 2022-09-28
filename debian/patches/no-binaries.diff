@@ -1,0 +1,22 @@
+From 0d635b06dd8f88b8f1f8756c407a4b95ca74d99f Mon Sep 17 00:00:00 2001
+From: Matthias Klose <doko@debian.org>
+Date: Tue, 19 May 2015 11:18:34 +0200
+Subject: no-binaries.diff
+
+Patch-Name: no-binaries.diff
+---
+ setup.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 63e3f3e..32d0811 100644
+--- a/setup.py
++++ b/setup.py
+@@ -68,7 +68,6 @@ distutils.core.setup(
+     ],
+     package_data={
+         'distlib._backport': ['sysconfig.cfg'],
+-        'distlib': ['t32.exe', 't64.exe', 'w32.exe', 'w64.exe'],
+     },
+     cmdclass={
+         'test': TestCommand,
